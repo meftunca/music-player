@@ -1,0 +1,27 @@
+html,
+body {
+	margin: 0;
+    padding: 0;
+    transition:all .3s ease-in-out;
+	background-color: #5e107b;
+    background-image: linear-gradient(19deg, #5e107b 0%, #271854 50%, #02126f 100%);
+    height: 100%;
+}
+
+.spinner {
+  -webkit-animation: spin 5s linear infinite;
+  animation: spin 5s linear  infinite;  
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  50% { -webkit-transform: rotate(180deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  50% { -webkit-transform: rotate(180deg); }
+  100% { transform: rotate(360deg); }
+}
+ 
